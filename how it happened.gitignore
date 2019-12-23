@@ -1,0 +1,21 @@
+how it happened.gitignore
+-initiation command =
+ rails new property-finder --database=postgresql --skip-test --skip-action-cable --skip-active-storage --skip-turbolinks --skip-yarn
+
+ 
+cd projectname
+# Create the Postgres user
+createuser projectname
+# Create the databases
+createdb -Oprojectname -Eutf8 projectname_development
+createdb -Oprojectname -Eutf8 projectname_test
+# Create some models/controllers etc
+rails generate controller site
+rails generate model 
+# Run migrations
+rake db:migrate
+# Start the server
+rails server
+
+ -make public(site) controller
+  .command// $ rails  g controller public main
